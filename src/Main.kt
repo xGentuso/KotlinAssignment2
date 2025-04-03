@@ -1,21 +1,8 @@
-/**
- * KotlinAssignment2 - String Manipulation Functions
- *
- * This file contains implementations for various string manipulation challenges:
- * A. Caesar cipher encryption
- * B. Anagram detection
- * C. Substring checking without using String.contains
- * D. Finding the longest word in a string
- */
 
 /**
  * Challenge A: Caesar Cipher Encryption
  * Encrypts a string by shifting each letter by the specified key value.
  * Non-letter characters remain unchanged.
- *
- * @param text The string to encrypt
- * @param key The number of positions to shift each letter
- * @return The encrypted string
  */
 fun encryptCaesarCipher(text: String, key: Int): String {
     val result = StringBuilder()
@@ -39,10 +26,6 @@ fun encryptCaesarCipher(text: String, key: Int): String {
  * Challenge B: Anagram Checker
  * Checks if two words are anagrams of each other.
  * Two words are anagrams if they contain the same letters in different orders.
- *
- * @param word1 The first word
- * @param word2 The second word
- * @return True if the words are anagrams, false otherwise
  */
 fun areAnagrams(word1: String, word2: String): Boolean {
     // If lengths differ, they can't be anagrams
@@ -58,10 +41,6 @@ fun areAnagrams(word1: String, word2: String): Boolean {
 /**
  * Challenge C: Substring Checker (without using String.contains)
  * Checks if the second string is a substring of the first string.
- *
- * @param mainString The main string to search in
- * @param subString The potential substring to search for
- * @return True if subString is contained within mainString, false otherwise
  */
 fun isSubstring(mainString: String, subString: String): Boolean {
     // Empty substring is always contained in any string
@@ -92,9 +71,7 @@ fun isSubstring(mainString: String, subString: String): Boolean {
  * Challenge D: Longest Word Finder
  * Finds the longest word in a string.
  * Words are considered to be separated by spaces.
- *
- * @param text The string to analyze
- * @return The longest word in the string
+
  */
 fun findLongestWord(text: String): String {
     // Split the text into words by spaces
